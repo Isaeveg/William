@@ -1,0 +1,19 @@
+.title {
+	color: var(--c-text-white);
+	font-size: 44rem;
+	font-weight: 700;
+	margin-bottom: 17rem;
+
+	span {
+		color: var(--c-primary);
+	}
+}
+
+.desc {
+	max-width: 460rem;
+	color: var(--c-text-secondary);
+	font-size: 16rem;
+	font-weight: 400;
+	line-height: 160%;
+	margin-bottom: 40rem;
+}

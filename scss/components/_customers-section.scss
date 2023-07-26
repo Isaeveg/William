@@ -1,0 +1,59 @@
+.customers-section {
+  &__blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26rem;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    max-width: 557rem;
+    padding: 32rem;
+    flex-direction: column;
+    gap: 28rem;
+    border-radius: 8rem;
+    background: var(--services-bg);
+    margin: 0 auto 0 auto;
+  }
+
+  h1 {
+    color: var(--c-text-white);
+    font-size: 18rem;
+    font-weight: 500;
+  }
+
+  &__name {
+    margin: auto 0 auto 20px;
+  }
+
+  h2 {
+    color: var(--c-primary);
+    font-size: 18rem;
+    font-weight: 400;
+    margin: 4px 0 0 0;
+  }
+
+  &__decription {
+    color: var(--c-text-white);
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  &__bio {
+    display: flex;
+  }
+}
+
+.title,
+.desc {
+  @include tablet {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

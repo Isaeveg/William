@@ -1,0 +1,40 @@
+.form-section {
+  margin-top: 40rem;
+  margin-bottom: 90rem;
+
+  &__form {
+    display: grid;
+    gap: 24rem;
+    margin-bottom: 24rem;
+  }
+}
+
+.forms {
+  &_input {
+    padding: 14rem;
+    color: var(--c-text-white);
+    font-size: 14rem;
+    font-weight: 400;
+    border-radius: 4rem;
+    background: transparent;
+    border: 1rem solid rgba(255, 255, 255, 0.15);
+    outline: 0;
+    width: 100%;
+
+    &::placeholder {
+      color: var(--c-text-secondary);
+      font-size: 14rem;
+      font-weight: 400;
+    }
+
+    &:focus {
+      border-color: var(--c-primary);
+    }
+
+    &._textarea {
+      resize: vertical;
+      min-height: 120rem;
+      max-height: 400rem;
+    }
+  }
+}

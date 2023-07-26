@@ -1,0 +1,41 @@
+.services {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 26rem;
+	@include tablet {
+		grid-template-columns: 1fr;
+	}
+	&__item {
+		background: var(--services-bg);
+		border-radius: 12rem;
+		padding: 32rem;
+		display: flex;
+		align-items: flex-start;
+		gap: 20rem;
+
+	}
+
+	&__icon {
+		background: #21201E;
+		flex: 0 0 76rem;
+		height: 76rem;
+		border-radius: 10rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	&__title {
+		color: var(--c-text-white);
+		font-size: 22rem;
+		font-weight: 500;
+		margin-bottom: 12rem;
+	}
+
+	&__desc {
+		color: var(--c-text-white);
+		font-size: 16rem;
+		line-height: 160%;
+	}
+}

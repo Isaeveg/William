@@ -1,0 +1,23 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+$footer-height: 500px;
+
+$btnRadius: 5px;
+
+:root {
+  --ff: "Rubik", sans-serif;
+  --transition: 0.4s all ease-in-out;
+
+  --c-primary: #ed9902;
+  --c-text-white: #fff;
+  --c-text-secondary: #9b968b;
+  --c-border: #eee;
+
+  --services-bg: #2d2b29;
+
+  --body-bg: #21201e;
+}

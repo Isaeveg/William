@@ -1,0 +1,131 @@
+.main-section {
+  margin-top: 88rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 60rem;
+
+  @include desktop-small {
+    display: grid;
+    justify-content: center;
+    gap: 80rem;
+  }
+
+  @include tablet {
+    padding-top: 40px;
+  }
+
+  @include mobile {
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__info {
+    @include mobile {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__title {
+    color: var(--c-text-white);
+    font-size: 92rem;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24rem;
+
+    @include mobile {
+      font-size: 70rem;
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__a {
+    color: var(--c-text-white);
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--c-primary);
+    }
+  }
+
+  span {
+    color: var(--c-text-white);
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 0 27rem 0 27rem;
+
+    @include mobile {
+      padding: 0 4rem 0 4rem;
+      font-size: 14rem;
+    }
+  }
+
+  &__desc {
+    max-width: 557rem;
+    margin-bottom: 24rem;
+    margin-top: 24rem;
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    @include tablet-small {
+      text-align: center;
+    }
+
+    img {
+      position: relative;
+      box-shadow: 0rem 15rem 14rem 0rem rgba(0, 0, 0, 0.59);
+      border-radius: 460rem;
+      z-index: 1;
+    }
+
+    &::before {
+      top: 330rem;
+      left: 37rem;
+      position: absolute;
+      content: "";
+      display: block;
+      width: 209rem;
+      height: 209rem;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #4d4a45 0%, #292824 100%);
+      box-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
+    }
+
+    &::after {
+      bottom: 188rem;
+      left: 164rem;
+      position: absolute;
+      content: "";
+      display: block;
+      width: 342rem;
+      height: 342rem;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #4d4a45 0%, #292824 100%);
+    }
+    @include tablet-small {
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
